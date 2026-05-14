@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Focus Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+  <header>
+    <h1>STUDY FOCUS TRACKER</h1>
+  </header>
+
+  <section id="subject">
+    <select id="subjectSelect">
+      <option>HTML</option>
+      <option>CSS</option>
+      <option>JS</option>
+      <option>REACT</option>
+      <option>DSA</option>
+    </select>
+  </section>
+
+  <section id="time">
+    <p id="timer">00:00:00</p>
+    <button id="startBtn">Start</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <section id="today-study">
+    <h3>Today's Study</h3>
+    <p>Total Time Studied: <span id="totalTime">00:00:00</span></p>
+
+    <p>Subjects Studied:</p>
+    <ul>
+      <li>HTML - 00:00:00</li>
+      <li>CSS - 00:00:00</li>
+      <li>JS - 00:00:00</li>
+    </ul>
+  </section>
+
+  <section id="weekly-study">
+    <h3>Weekly Progress</h3>
+
+    Mon
+    <div class="progress">
+      <div class="progress-bar" style="width: 0%"></div>
+    </div>
+
+    Tue
+    <div class="progress">
+      <div class="progress-bar" style="width: 25%"></div>
+    </div>
+
+    Wed
+    <div class="progress">
+      <div class="progress-bar" style="width: 50%"></div>
+    </div>
+
+    Thurs
+    <div class="progress">
+      <div class="progress-bar" style="width: 75%"></div>
+    </div>
+
+    Fri
+    <div class="progress">
+      <div class="progress-bar" style="width: 100%"></div>
+    </div>
+  </section>
+
+  <footer id="motivation">
+    <p>"Small progress daily = Big success"</p>
+  </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
